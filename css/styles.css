@@ -57,3 +57,30 @@ body {
 .project-img {
   width: 100%;
 }
+
+
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+  /* .project {
+    display: block;
+  } */
+}
+
+@media (max-width: 992px) {
+
+}
+
+
+@media (max-width: 1210px) {
+  .project-grid {
+    display: block;
+  }
+
+  .project {
+    margin-bottom: 20px;
+  }
+}
