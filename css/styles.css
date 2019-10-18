@@ -85,6 +85,26 @@ ol {
   list-style-position: inside;
 }
 
+.color-change-animation {
+  -webkit-animation:turnred 3s infinite alternate;
+}
+
+/* I found this approach to animating color change here: https://stackoverflow.com/questions/16782498/looping-animation-of-text-color-change-using-css3 */
+
+@-webkit-keyframes turnred {
+  0% {
+    color: white;
+  }
+
+  60% {
+    color: white;
+  }
+
+  100% {
+    color: red;
+  }
+}
+
 .music-players {
   display: grid;
   grid-template-columns: 1fr 1fr;
