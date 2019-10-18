@@ -39,9 +39,14 @@ body {
 .project {
   display: grid;
   grid-template-columns: 1fr 300px;
+  column-gap: 20px;
   width: 100%;
   max-height: 300px;
   margin: auto;
+}
+
+.project-text {
+  padding: 5px;
 }
 
 .project-img {
