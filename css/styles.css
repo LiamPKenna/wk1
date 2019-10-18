@@ -50,14 +50,14 @@ body {
 .project {
   display: grid;
   grid-template-columns: 1fr 300px;
-  column-gap: 20px;
   width: 100%;
   max-height: 300px;
   margin: auto;
 }
 
 .project-text {
-  padding: 5px;
+  padding: 8px;
+  background-color: #4c7563;
 }
 
 .project-img {
@@ -77,6 +77,25 @@ body {
 
 ol {
   list-style-position: inside;
+}
+
+.music-players {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 35px;
+  row-gap: 35px;
+  justify-items: center;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 100%;
+}
+
+.music-players iframe {
+  margin: 10px, 10px;
+  margin-bottom: 15px;
+  border: 0;
+  width: 100%;
+  max-width: 550px;
 }
 
 @media (max-width: 576px) {
@@ -102,6 +121,10 @@ ol {
     float: right;
     height: 0;
     width: 0;
+  }
+
+  .music-players {
+    display: block;
   }
 
 }
