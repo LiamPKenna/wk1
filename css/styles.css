@@ -11,8 +11,6 @@
 
 .right-main {
   background-color: #4d5451;
-  display: flex;
-  flex-flow: column;
 }
 
 .headshot {
