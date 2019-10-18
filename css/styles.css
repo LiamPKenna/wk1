@@ -55,7 +55,9 @@ body {
 }
 
 .project-img {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
 
@@ -65,9 +67,20 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* .project {
+
+  .project-text {
     display: block;
-  } */
+    background-color: #4d5451;
+
+  }
+
+  .project-img {
+    display: block;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 992px) {
