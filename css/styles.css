@@ -38,7 +38,12 @@ body {
   background-color: #4d5451;
 }
 
+.projects {
+  align-items: center;
+}
+
 .project-grid {
+  max-width: 1400px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 30px;
@@ -48,6 +53,7 @@ body {
 }
 
 .project {
+  max-width: 800px;
   display: grid;
   grid-template-columns: 1fr 300px;
   width: 100%;
