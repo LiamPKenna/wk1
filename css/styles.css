@@ -119,8 +119,7 @@ ol {
 
   .yearbook-photo {
     float: right;
-    height: 0;
-    width: 0;
+    display: none;
   }
 
   .music-players {
