@@ -60,7 +60,14 @@ body {
   height: auto;
 }
 
+.yearbook-photo {
+  max-width: 300px;
+  float: left;
+}
 
+.about-me {
+
+}
 
 @media (max-width: 576px) {
 
@@ -71,7 +78,6 @@ body {
   .project-text {
     display: block;
     background-color: #4d5451;
-
   }
 
   .project-img {
@@ -81,6 +87,12 @@ body {
   .project {
     grid-template-columns: 1fr;
   }
+
+  .yearbook-photo {
+    float: right;
+    display: none;
+  }
+
 }
 
 @media (max-width: 992px) {
