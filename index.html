@@ -12,22 +12,22 @@
     <div class="top-navigation sticky-top">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a href="index.html" class="nav-link text-light active">Home</a>
+          <a href="#intro" class="nav-link text-light">Home</a>
         </li>
         <li class="nav-item">
-          <a href="projects.html" class="nav-link text-light">Projects</a>
+          <a href="#projects" class="nav-link text-light">Projects</a>
         </li>
         <li class="nav-item">
-          <a href="hobby.html" class="nav-link text-light">Other Interests</a>
+          <a href="#hobby" class="nav-link text-light">Other Interests</a>
         </li>
         <li class="nav-item">
-          <a href="about.html" class="nav-link text-light">About Me</a>
+          <a href="#about" class="nav-link text-light">About Me</a>
         </li>
       </ul>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div class="container-flex fullpage-wrap">
+    <!-- INTRODUCTION -->
+    <div id="intro" class="container-flex fullpage-wrap">
       <div class="row no-gutters">
         <div class="col-md-4 col-ms-2 d-none d-md-block left-main">
           <div class="center-img" style="background-image: url('img/LiamKenna.jpg')">
@@ -52,5 +52,139 @@
         </div>
       </div>
     </div>
+    <hr class="section-break">
+    <!-- PROJECTS -->
+    <div id="projects" class="nav-cushion container-flex fullpage-wrap">
+      <div class="container heading text-light mt-5 text-center">
+        <h1>PROJECTS</h1>
+        <p>
+            I have built applications using a variety of technologies and pride myself on constantly learning and
+            expanding my skills.
+        </p>
+        <br />
+        <p><strong>Back End</strong> — Node, Express, MongoDB, Java</p>
+        <br />
+        <p><strong>Front End</strong> — JavaScript, React, HTML, CSS</p>
+        <hr />
+      </div>
+      <div class="container-flex projects text-light mt-5 text-center">
+        <div class="project-grid">
+          <div class="project">
+            <div class="project-text">
+              <a class="text-light" href="https://github.com/LiamPKenna/wiki">
+                <h4>Wikipedia Homepage Clone</h4>
+              </a>
+              <p>Worked with two other developers to quickly mimic the basic look of the <em>Wikipedia</em> home page in a single afternoon.</p>
+              <p><small><em>HTML/CSS/Bootstrap</em></small></p>
+            </div>
+            <img class="project-img" src="img/wiki.png" alt="Wikipedia Homepage Clone">
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <a class="text-light" href="https://github.com/LiamPKenna/SimpleLaborTool">
+                <h4>Labor Tracking Utility</h4>
+              </a>
+              <p>Node.js app to analyze bulk labor and transaction data for all retail locations. Returned a report with labor per item or per dollar revenue broken down by hour of business and location.</p>
+              <p><small><em>JavaScript/Node.js</em></small></p>
+            </div>
+            <img class="project-img" src="img/LaborGraphSquare.gif" alt="Labor Tracking Utility">
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <a class="text-light" href="https://github.com/LiamPKenna/Reporting">
+                <h4>Weekly Reporting Dashboard</h4>
+              </a>
+              <p>Node.js app built to provide sales analysis along with comparative weather. Data was loaded from the POS system and a third party API. All data was processed, formatted, then pushed to a shared endpoint.</p>
+              <p><small><em>JavaScript/Node.js</em></small></p>
+            </div>
+            <img class="project-img" src="img/Reporting.gif" alt="Weekly Reporting Dashboard">
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <h4>E-Learning Platform</h4>
+              <p>Built and managed an E-Learning platform for in-café education, collecting all resources into a single organized app. Updates deployed consistently and on schedule with new content released every other week.</p>
+              <p><small><em>HTML/CSS</em></small></p>
+            </div>
+            <img class="project-img" src="img/WFsite.gif" alt="E-Learning Platform">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="section-break">
+    <!-- HOBBIES -->
+    <div id="hobby" class="nav-cushion container-flex fullpage-wrap">
+      <div class="container heading text-light mt-5 text-center">
+        <h1>OTHER INTERESTS</h1>
+        <p>
+            My hobbies include reading, playing music, hiking/camping, watching mysteries/sports, and spending time with my wife and our dog.
+        </p>
+        <br />
+        <p>Below are some of the musical projects I have been in:</p>
+        <br />
+        <hr />
+      </div>
+      <div class="container">
+        <div class="music-players">
+            <iframe
+                height="439px"
+                src="https://bandcamp.com/EmbeddedPlayer/album=2875608579/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/"
+                seamless
+                title="Pocket Parade"
+            >
+                    <a href="http://pocketparade.bandcamp.com/album/pocket-parade">Pocket Parade by Pocket Parade</a>
+            </iframe>
+            <iframe
+                height="439px"
+                src="https://bandcamp.com/EmbeddedPlayer/album=3560100330/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/"
+                seamless
+                title="The Dealies"
+            >
+                    <a href="http://thedealies.bandcamp.com/album/the-dealies">The Dealies by The Dealies</a>
+            </iframe>
+            <iframe
+                height="439"
+                src="https://open.spotify.com/embed/album/6UMZm4rRowm2hzILSbR3m5"
+                frameBorder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+                title="The SnuggleUps"
+            ></iframe>
+            <iframe
+                height="120px"
+                src="https://bandcamp.com/EmbeddedPlayer/track=70075664/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+                seamless
+                title="Megadome"
+            ><a href="http://megadome.bandcamp.com/track/game-of-pricks-gbv-cover">Game Of Pricks (GBV Cover) by Megadome</a>
+            </iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="section-break">
+    <!-- ABOUT ME -->
+    <div id="about" class="nav-cushion container-flex fullpage-wrap text-light">
+      <div class="container mt-5">
+        <div class="text-center">
+          <h1>ABOUT ME</h1>
+        </div>
+        <div class="about-me float-left d-inline m-5 ml-0">
+          <div class="m-5 d-inline">
+            <img class="rounded yearbook-photo mr-5" src="img/youngLiam.jpg" alt="Liam">
+          </div>
+          <h4>Background:</h4>
+          <p>I was born in a tiny town in Utah and grew up in rural Oregon.</p>
+          <p>I have had two dogs in my life:</p>
+          <ol>
+            <li><strong>Bear - </strong>A collie mutt from age 0 - 8</li>
+            <li><strong>Bug (Holly) - </strong>A yellow lab mutt from age 30 - present</li>
+          </ol>
+          <p>After graduating High School, I briefly attended Southern Oregon University before leaving to move to Portland OR with a band.</p>
+          <p>I spent my early time in Portland playing music and working service jobs, with the last decade+ spent in management/communication/training roles for a coffee company.</p>
+          <p>I <span class="color-change-animation">fell in love</span> with coding while building tools to help me do my previous jobs and have been actively growing my skills ever since.</p>
+          <p>I am excited to join a passionate and diverse team and help them excel.</p>
+          <p>If you have an opportunity that I could be a good fit for, please <a class="text-light" href="mailto:liam@liamkenna.com"><strong>click here to email me!</strong></a></p>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

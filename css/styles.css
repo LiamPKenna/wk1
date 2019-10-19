@@ -78,11 +78,12 @@ body {
 
 .project {
   max-width: 800px;
+  max-height: 300px;
   display: grid;
   grid-template-columns: 1fr 300px;
   width: 100%;
-  max-height: 300px;
   margin: auto;
+  overflow: hidden;
 }
 
 .project-text {
@@ -148,6 +149,21 @@ ol {
   max-width: 550px;
 }
 
+.nav-cushion {
+  padding-top: 40px;
+}
+
+.section-break {
+  margin-top: 70px;
+  height: 8px;
+  background-image:
+    linear-gradient(
+      to left,
+      rgba(0,0,0,0) 0%,
+      rgba(137, 176, 159,1) 50%,
+      rgba(0,0,0,0) 100%
+      );
+}
 
 /* MEDIA QUERIES */
 
@@ -168,6 +184,7 @@ ol {
 
   .project {
     grid-template-columns: 1fr;
+    max-height: 100%;
   }
 
   .yearbook-photo {
