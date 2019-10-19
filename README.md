@@ -10,7 +10,7 @@ _This site includes an image of the author, a list of linked projects with descr
 
 ## Setup/Installation Requirements
 
-* _This site can be viewed in it's current form at https://LiamPKenna.github.io/wk1 _
+* _This site can be viewed in it's current form at https://LiamPKenna.github.io/wk1_
 
 _To explore the source code, feel free to browse on github or clone to your local machine_
 
