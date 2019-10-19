@@ -151,19 +151,6 @@ ol {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 700px) {
-
-  .mobile-img {
-    display: block;
-  }
-
-  .headshot {
-    width: 100%;
-  }
-
-
-}
-
 @media (max-width: 768px) {
 
   .nav-item a {
@@ -190,6 +177,14 @@ ol {
 
   .music-players {
     display: block;
+  }
+
+  .mobile-img {
+    display: block;
+  }
+
+  .headshot {
+    width: 100%;
   }
 
 }
