@@ -1,3 +1,11 @@
+body {
+  background-color: #4d5451;
+}
+
+ol {
+  list-style-position: inside;
+}
+
 /* Gradients from https://cssgradient.io/ */
 
 .top-navigation {
@@ -10,8 +18,10 @@
   padding: 15px;
 }
 
-a.active {
-  text-shadow: 6px 8px 15px black;
+.mobile-nav {
+  display: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Border image gradient concept below from https://css-tricks.com/gradient-borders-in-css/ */
@@ -58,29 +68,25 @@ a.active {
   max-width: 650px;
 }
 
-body {
-  background-color: #4d5451;
-}
-
 .projects {
   align-items: center;
 }
 
 .project-grid {
-  max-width: 1400px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 30px;
   column-gap: 30px;
   width: 100%;
+  max-width: 1400px;
   margin: auto;
 }
 
 .project {
-  max-width: 800px;
   display: grid;
   grid-template-columns: 1fr 300px;
   width: 100%;
+  max-width: 800px;
   max-height: 300px;
   margin: auto;
 }
@@ -103,10 +109,6 @@ body {
 
 .about-me {
   width: auto;
-}
-
-ol {
-  list-style-position: inside;
 }
 
 .color-change-animation {
@@ -148,27 +150,39 @@ ol {
   max-width: 550px;
 }
 
+.nav-cushion {
+  padding-top: 40px;
+}
+
+.section-break {
+  border: none;
+  margin-top: 70px;
+  height: 8px;
+  background-image:
+    linear-gradient(
+      to left,
+      rgba(0,0,0,0) 10%,
+      rgba(137, 176, 159,1) 50%,
+      rgba(0,0,0,0) 90%
+      );
+}
 
 /* MEDIA QUERIES */
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
-  .mobile-img {
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-nav {
     display: block;
   }
 
-  .headshot {
-    width: 100%;
+  .nav-link {
+    padding: 5px;
   }
 
-
-}
-
-@media (max-width: 768px) {
-
-  .nav-item a {
-    font-size: 12px;
-  }
 
   .project-text {
     display: block;
@@ -181,6 +195,7 @@ ol {
 
   .project {
     grid-template-columns: 1fr;
+    max-height: 100%;
   }
 
   .yearbook-photo {
@@ -190,6 +205,14 @@ ol {
 
   .music-players {
     display: block;
+  }
+
+  .mobile-img {
+    display: block;
+  }
+
+  .headshot {
+    width: 100%;
   }
 
 }
