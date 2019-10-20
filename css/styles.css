@@ -24,6 +24,11 @@ ol {
   padding-right: 0;
 }
 
+.home-icon {
+  height: 14px;
+  width: 14px;
+}
+
 /* Border image gradient concept below from https://css-tricks.com/gradient-borders-in-css/ */
 
 .left-main {
@@ -168,7 +173,22 @@ ol {
       );
 }
 
+.break-pipe {
+  display: none;
+}
+
 /* MEDIA QUERIES */
+
+@media (max-width: 500px) {
+  .nav-link {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .break-pipe {
+    display: inline;
+  }
+}
 
 @media (max-width: 768px) {
 
@@ -179,11 +199,6 @@ ol {
   .mobile-nav {
     display: block;
   }
-
-  .nav-link {
-    padding: 5px;
-  }
-
 
   .project-text {
     display: block;
