@@ -24,6 +24,11 @@ ol {
   padding-right: 0;
 }
 
+.home-icon {
+  height: 14px;
+  width: 14px;
+}
+
 /* Border image gradient concept below from https://css-tricks.com/gradient-borders-in-css/ */
 
 .left-main {
@@ -66,10 +71,6 @@ ol {
 
 .main-shout {
   max-width: 650px;
-}
-
-.projects {
-  align-items: center;
 }
 
 .project-grid {
@@ -168,7 +169,69 @@ ol {
       );
 }
 
+.break-pipe {
+  display: none;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.video {
+  display: grid;
+  grid-template-columns: 1fr 70%;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  background: #4c7563;
+  margin-bottom: 30px;
+}
+
+.video-text {
+  padding: 10%;
+  background: #4c7563;
+}
+
+.video iframe {
+  float: middle;
+  display: block;
+}
+
+ .video-wrap {
+  position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+  height: 0;
+}
+
+.video-wrap iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
 /* MEDIA QUERIES */
+
+@media (max-width: 500px) {
+  .nav-link {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .break-pipe {
+    display: inline;
+  }
+}
 
 @media (max-width: 768px) {
 
@@ -179,11 +242,6 @@ ol {
   .mobile-nav {
     display: block;
   }
-
-  .nav-link {
-    padding: 5px;
-  }
-
 
   .project-text {
     display: block;
@@ -197,6 +255,12 @@ ol {
   .project {
     grid-template-columns: 1fr;
     max-height: 100%;
+  }
+
+  .video {
+    grid-template-columns: 1fr;
+    max-height: 100%;
+    margin-bottom: 0px;
   }
 
   .yearbook-photo {
