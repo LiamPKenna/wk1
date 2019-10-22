@@ -24,7 +24,7 @@ _Any issues or concerns, please email liam@liamkenna.com_
 
 ## Technologies Used
 
-_HTML, CSS, Bootstrap_
+_HTML, CSS, Bootstrap, jQuery, JavaScript_
 
 ### License
 
