@@ -71,6 +71,11 @@ ol {
 
 .main-shout {
   max-width: 650px;
+  display: none;
+}
+
+#fade-text {
+  display: none;
 }
 
 .project-grid {
